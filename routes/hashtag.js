@@ -2,7 +2,7 @@ var auth = require('../auth');
 var models = require('../models');
 
 exports.getHashtag = function(req, res) {
-	auth.ig.tags.recent({
+auth.ig.tags.recent({
 	name: req.body.hashtag,
 	complete: function(data) {
 		//create an image array
